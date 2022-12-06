@@ -7,7 +7,7 @@ const FindMovie = () => {
 
   useEffect(() => {
     const fetchMovies = async () => {
-      const URL = `http://www.omdbapi.com/?s=${MovieTitle}&apikey=f2c67f94`;
+      const URL = `https://www.omdbapi.com/?s=${MovieTitle}&apikey=f2c67f94`;
       const response = await fetch(URL);
       const final_Data = await response.json();
       console.log(final_Data.Search);
